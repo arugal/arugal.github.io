@@ -1,0 +1,96 @@
+baseURL: "https://arugal.github.io/"
+languageCode: "zh-cn"
+title: "Arugal's Blog"
+theme: "hugo-PaperMod"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+defaultContentLanguage: zh
+defaultContentLanguageInSubdir: true
+
+languages:
+  zh:
+    languageName: "中文"
+    weight: 2
+    menu:
+      main:
+        - name: 文章
+          url: post/
+          weight: 7
+        - name: 归档
+          url: /archives/
+          weight: 8
+        - name: 标签
+          url: tags/
+          weight: 9
+        - name: 分类
+          url: categories/
+          weight: 10
+        - name: 搜索
+          url: search/
+          weight: 11
+    params:
+      profileMode:
+        enabled: true
+        title: "Arugal"
+        subtitle: "Just be fun"
+        imageUrl: "https://avatars.githubusercontent.com/u/26432832?v=4"
+        imageTitle: "arugal.jpeg"
+        imageWidth: 140
+        imageHeight: 140
+
+params:
+  env: production
+  keywords: [Blog, OpenSource, Coding, Golang, Java, Kuberetes, Programming]
+  author: "Arugal"
+  defaultTheme: auto
+  disableThemeToggle: false
+
+  ShowToc: true
+  TocOpen: false
+  ShowBreadCrumbs: true
+  ShowReadingTime: false
+  ShowPostNavLinks: true
+  ShowShareButtons: false
+  ShowCodeCopyButtons: true
+  displayFullLangName: true
+
+  editPost:
+    URL: "https://github.com/arugal/arugal.github.io/tree/main/content"
+    Text: "Suggest Changes"
+    appendFilePath: true
+
+  homeInfoParams:
+    Title: "Arugal"
+    Content: "Just be fun"
+
+  profileMode:
+    enabled: true
+    title: "Arugal"
+    subtitle: "Just be fun"
+    imageUrl: "https://avatars.githubusercontent.com/u/26432832?v=4"
+    imageTitle: "avatar.jpeg"
+    imageWidth: 140
+    imageHeight: 140
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/arugal"
+    - name: twitter
+      url: "https://twitter.com/zhangwei_95"
+    - name: RsS
+      url: "index.xml"
+
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON

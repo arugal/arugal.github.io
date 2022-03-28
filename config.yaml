@@ -1,7 +1,7 @@
 baseURL: "https://arugal.github.io/"
 languageCode: "zh-cn"
 title: "Arugal's Blog"
-theme: "hugo-PaperMod"
+theme: "paperMod"
 
 enableInlineShortcodes: true
 enableRobotsTXT: true

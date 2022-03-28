@@ -3,10 +3,12 @@ languageCode: "zh-cn"
 title: "Arugal's Blog"
 theme: "hugo-PaperMod"
 
+enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
+enableEmoji: true
 
 defaultContentLanguage: zh
 defaultContentLanguageInSubdir: true
@@ -17,9 +19,6 @@ languages:
     weight: 2
     menu:
       main:
-        - name: 文章
-          url: post/
-          weight: 7
         - name: 归档
           url: /archives/
           weight: 8
@@ -34,7 +33,7 @@ languages:
           weight: 11
     params:
       profileMode:
-        enabled: true
+        enabled: false
         title: "Arugal"
         subtitle: "Just be fun"
         imageUrl: "https://avatars.githubusercontent.com/u/26432832?v=4"
@@ -65,16 +64,16 @@ params:
 
   homeInfoParams:
     Title: "Arugal"
-    Content: "Just be fun"
-
+    Content: "Java And Golang Coder; Open Source Enthusiast; Just be fun."
   profileMode:
-    enabled: true
+    enabled: false
     title: "Arugal"
     subtitle: "Just be fun"
     imageUrl: "https://avatars.githubusercontent.com/u/26432832?v=4"
     imageTitle: "avatar.jpeg"
     imageWidth: 140
     imageHeight: 140
+
 
   socialIcons:
     - name: github

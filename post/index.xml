@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>文章 on Arugal's Blog</title><link>https://arugal.github.io/post/</link><description>Recent content in 文章 on Arugal's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 25 Nov 2022 12:35:19 +0800</lastBuildDate><atom:link href="https://arugal.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>搭建一个 IPv4/IPv6 双栈网络 Kubernetes 集群</title><link>https://arugal.github.io/post/dual-stack/</link><pubDate>Fri, 25 Nov 2022 12:35:19 +0800</pubDate><guid>https://arugal.github.io/post/dual-stack/</guid><description>概述 本文讲述如何使用 kubeadm 在腾讯云上搭建一个 IPv4/IPv6 双栈网络 Kuberentes 集群，全文使用到的项目如下:
+Docker 20.10.21
+Kuberentes v1.23.14
+Calico v3.24.5
+dula-stack
+前期准备 在腾讯云购买两台云服务器, 服务器需要启用 IPv6
+机器 IPv4 IPv6 说明 VM-16-9-centos 10.206.16.9 2402:4e00:1801:d000:0:97da:5b30:d4c3 Master 节点 VM-16-15-centos 10.206.16.15 2402:4e00:1801:d000:0:97da:5b09:8905 Worker 节点 系统配置
+# 关闭防火墙 systemctl stop firewalld systemctl disable firewalld # 禁用 SELinux sed -ri &amp;#39;s/SELINUX=enforcing/SELINUX=disabled/&amp;#39; /etc/selinux/config setenforce 0 getenforce # 禁用交换分区 (云服务器默认已经禁用) swapoff -a sed -i /^[^#]*swap*/s/^/\#/g /etc/fstab # 设置内核参数 echo &amp;#39;net.ipv6.conf.all.forwarding = 1&amp;#39; &amp;gt;&amp;gt; /etc/sysctl.conf echo &amp;#39;net.</description></item></channel></rss>

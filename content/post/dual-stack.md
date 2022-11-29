@@ -1,7 +1,7 @@
 ---
 title: "搭建一个 IPv4/IPv6 双栈网络 Kubernetes 集群"
 date: 2022-11-25T12:35:19+08:00
-draft: true
+draft: false
 ShowToc: false
 ---
 
@@ -231,31 +231,28 @@ ShowToc: false
 
 2. 查看 Pod 和 Service 的 IP
 
-   ![](https://cdn.jsdelivr.net/gh/arugal/img@main/image/20221128220758.png)
-   <center>Pod 的 IPv4 和 IPv6</center>
-   
-	![](https://cdn.jsdelivr.net/gh/arugal/img@main/image/202211282208619.png)
-	 <center>Service 的 IPv4 和 IPv6</center>
+   ![Pod 的 IPv4 和 IPv6](https://cdn.jsdelivr.net/gh/arugal/img@main/image/20221128220758.png)   
+
+	 ![Service 的 IPv4 和 IPv6](https://cdn.jsdelivr.net/gh/arugal/img@main/image/202211282208619.png)
+	 
+
 3. 通过 Pod 的 IPv4 和 IPv6 访问
 
-   ![](https://cdn.jsdelivr.net/gh/arugal/img@main/image/202211282209007.png)
-   <center>通过 Pod 的 IPv4 访问</center>
-   
-   ![](https://cdn.jsdelivr.net/gh/arugal/img@main/image/202211282212515.png)
-   <center>通过 Pod 的 IPv6 访问</center>
+   ![通过 Pod 的 IPv4 访问](https://cdn.jsdelivr.net/gh/arugal/img@main/image/202211282209007.png)
+
+   ![通过 Pod 的 IPv6 访问](https://cdn.jsdelivr.net/gh/arugal/img@main/image/202211282212515.png)
+
 4. 通过 Service 的 IPv4 和 IPv6 访问
 
-   ![](https://cdn.jsdelivr.net/gh/arugal/img@main/image/202211282211883.png)
-   <center>通过 Service 的 IPv4 访问</center>
-   
-   ![](https://cdn.jsdelivr.net/gh/arugal/img@main/image/image-20221128221303524.png)
-   <center>通过 Service 的 IPv6 访问</center>
+   ![通过 Service 的 IPv4 访问](https://cdn.jsdelivr.net/gh/arugal/img@main/image/202211282211883.png)
+
+   ![通过 Service 的 IPv6 访问](https://cdn.jsdelivr.net/gh/arugal/img@main/image/image-20221128221303524.png)
+
 5. 通过 NodePort 访问
 
-   ![](https://cdn.jsdelivr.net/gh/arugal/img@main/image/202211282215439.png)
-   <center>通过 IPv4 访问 NodePort</center>
-   ![](https://cdn.jsdelivr.net/gh/arugal/img@main/image/202211282225862.png)
-   <center>通过 IPv6 访问 NodePort</center>
+   ![通过 IPv4 访问 NodePort](https://cdn.jsdelivr.net/gh/arugal/img@main/image/202211282215439.png)
+
+   ![通过 IPv6 访问 NodePort](https://cdn.jsdelivr.net/gh/arugal/img@main/image/202211282225862.png)
    
 ### 参考
 

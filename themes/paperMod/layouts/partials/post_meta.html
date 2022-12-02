@@ -19,3 +19,8 @@
 {{- with ($scratch.Get "meta") }}
 {{- delimit . "&nbsp;·&nbsp;" -}}
 {{- end -}}
+
+{{ $baseurl := .Site.BaseURL }}
+<div>
+    ☕️ {{ .ReadingTime }} 分钟 | 👀 <span id="busuanzi_value_page_pv"></span>
+</div>
